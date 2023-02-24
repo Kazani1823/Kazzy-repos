@@ -875,4 +875,263 @@ footer .container ul {
   text-align: center;
   gap: 1.4rem;
 }
+  
+  /* ======================== MEDIA QUERY (IPAD SCREEN SIZE) ==========================*/
+
+@media screen and (max-width: 1200px) {
+  nav {
+    color: red;
+  }
+  h1 {
+    font-size: 3.2rem;
+   }
+   h2 {
+    font-size: 2.6rem;
+   }
+   h3 {
+    font-size: 2.2rem;
+   }
+   h4 {
+    font-size: 1.5rem;
+   }
+   h5 {
+    font-size: 1rem;
+   }
+  
+   .container {
+    width: 94%;
+   }
+
+   /* ================= NAV BAR ================= */
+
+   h3 {
+    margin-left: 1rem;
+   }
+  
+   nav .container {
+    width: 100;
+   }
+  
+   nav .container ul {
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    z-index: 3;
+    width: 16rem;
+    height: 100vh;
+    background: var(--color-white);
+    box-shadow: 1rem 0 2rem var(--color-primary-light);
+    display: none;
+   }
+  
+   nav .container ul li {
+    height: 4.6rem;
+    width: 100%;
+   }
+  
+   nav .container ul li a {
+    width: 100%;
+    justify-content: start;
+    padding-left: 2rem;
+   }
+  
+   nav .container ul li a:hover {
+    padding-left: 3rem;
+   }
+  
+   nav button {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-black);
+   }
+  
+   nav button#close-btn {
+    display: none;
+   }
+
+   /* ================= NAV BAR ==================*/
+
+   
+ h3 {
+  margin-left: 1rem;
+ }
+
+ nav .container {
+  width: 94%;
+ }
+
+ nav .container ul {
+  position: fixed;
+  top: 0;
+  flex-direction: row;
+  z-index: 3;
+  width: 16rem;
+  height: 100vh;
+  background: var(--color-white);
+  box-shadow: 1rem 0 2rem var(--color-primary-light);
+  display: none;
+ }
+
+ nav .container ul li {
+  height: 4.6rem;
+  width: 100%;
+ }
+
+ nav .container ul li a {
+  width: 100%;
+  justify-content: start;
+  padding-left: 2rem;
+ }
+
+ nav .container ul li a:hover {
+  padding-left: 3rem;
+ }
+
+ nav button {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-black);
+ }
+
+ nav button#close-btn {
+  display: none;
+ }
+
+ 
+ /* ============================ LANDING SECTION ======================== */
+ section.landing {
+  margin-top: -4rem;
+  padding-bottom: 7rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+ }
+
+ section.landing .container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 50%;
+  text-align: center;
+  row-gap: 6rem;
+ }
+
+ section.landing .container .socials {
+  display: none;
+ }
+
+ section.landing .container .info {
+  width: 90%;
+  margin: 0 auto;
+ }
+
+ section.landing .container .info  h1 {
+  text-align: center;
+ }
+
+ section.landing .container .info p {
+  margin: 0 auto;
+  width: 92%;
+ }
+
+ section.landing .container .profile-area {
+  grid-row: 1;
+  width: 94%;
+  margin: 0 auto;
+ }
+
+ section.landing .container .outer-circle {
+  width: 20rem;
+  height: 20rem;
+ }
+
+ section.landing .container .inner-circle {
+  width: 13rem;
+  height: 13rem;
+ }
+
+ section.landing .container .outer-circle span {
+  width: 4rem;
+  height: 4rem;
+ }
+
+ section.landing .profile-area .outer-circle span:nth-child(1) {
+  left: calc(50% - 2rem);
+  top: -2rem;
+}
+
+section.landing .profile-area .outer-circle span:nth-child(2) {
+  right: -2rem;
+  top: calc(50% - 2rem);
+}
+
+section.landing .profile-area .outer-circle span:nth-child(3) {
+  left: -2rem;
+  top: calc(50% - 2rem);
+}
+
+section.landing .profile-area .outer-circle span:nth-child(4) {
+  bottom: -2rem;
+  left: calc(50% - 2rem);
+}
+
+/* ============================== ABOUT SECTION ========================== */
+section.about .container {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  text-align: center;
+  width: 94%;
+}
+
+/* ========================= SKILLS SECTION ====================== */
+section.skills .container {
+  width: 94%;
+}
+
+/* ========================= SERVICES SECTION ====================== */
+section.services .container {
+  grid-template-columns: 1fr;
+}
+
+/* ========================= PORTFOLIO SECTION ====================== */
+section.recent-work .container .project {
+  grid-template-columns: 1fr;
+}
+
+section.recent-work .container h1 {
+  width: 94vw;
+  margin: 2.4rem 0 2rem;
+}
+
+/* ========================= TESTIMONIAL SECTION ====================== */
+section.testimonials .container {
+  grid-template-columns: 1fr;
+  width: 94%;
+}
+
+section.testimonials .container .testimonial .head .stars span {
+  font-size: 1.5rem;
+}
+
+/* ========================= CONTACT SECTION ====================== */
+section.contact .container {
+  width: 94%;
+}
+
+section.contact .container p {
+  width: 94%;
+  margin: 1.5rem auto 0;
+}
+
+/* ========================= FOOTER SECTION ====================== */
+footer .container {
+  flex-direction: column;
+  gap: 6rem;
+}
+
+footer .container ul {
+  flex-direction: column;
+  text-align: center;
+  gap: 2.4rem;
+}
+  
 }
